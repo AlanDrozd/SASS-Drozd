@@ -1,0 +1,20 @@
+@import "colores";
+@import "estructura";
+@import "tipografia";
+
+
+header, footer{
+    p{
+        color: $textoPrimario;
+        &:hover{
+            color: $textoSecundario;
+        }
+    }
+}
+main{
+    section{
+        p{
+            color: $textoPrincipal;
+        }
+    }
+}

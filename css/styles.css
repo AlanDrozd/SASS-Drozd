@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #50002C; }
+
+header, footer {
+  background-color: #50002C;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem; }
+  header p, footer p {
+    align-self: center;
+    transition: color 2s ease 30ms; }
+
+.logo {
+  width: 150px; }
+
+main {
+  background-color: #DDD7C6;
+  padding: 1rem;
+  border-radius: 10px; }
+  main h1, main p {
+    align-self: center;
+    text-align: center; }
+  main article {
+    padding: 1rem;
+    background-color: rgba(160, 160, 160, 0.5);
+    border-radius: 3px; }
+
+* {
+  font-family: 'Updock', cursive; }
+
+body header p, body footer p {
+  font-weight: bold;
+  font-size: 2rem; }
+
+header p, footer p {
+  color: white; }
+  header p:hover, footer p:hover {
+    color: #cf649a; }
+
+main section p {
+  color: black; }

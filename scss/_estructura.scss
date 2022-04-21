@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $fondoPrimario
+}
+header, footer{
+    background-color: $fondoPrimario;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    p{
+    align-self: center;
+    transition: color 2s ease 30ms
+    }
+}
+.logo{
+    width: 150px;
+}
+main{
+    background-color: $fondoSecundario;
+    padding: 1rem;
+    border-radius: 10px;
+    h1, p{
+        align-self: center;
+        text-align: center;
+    }
+    article{
+        padding: 1rem;
+        background-color: $fondoDestacado;
+        border-radius: 3px;
+    }
+}
