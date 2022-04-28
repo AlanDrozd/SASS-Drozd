@@ -3,33 +3,73 @@
     padding: 0;
 }
 body{
-    background-color: $fondoPrimario
+    background-color: map-get($palette, "fondoPrimario");
 }
-header, footer{
-    background-color: $fondoPrimario;
+
+.centrado{
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 1rem;
-    p{
+}
+header, footer{
+    background-color: map-get($palette, "fondoPrimario");
+    @extend .centrado;
+    h1, h2{
     align-self: center;
     transition: color 2s ease 30ms
+    }
+}
+.navStyle{
+    @extend .centrado;
+    background-color: map-get($palette, "fondoSecundario");
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    a{
+        color: map-get($palette, "textoPrincipal");
+    }
+    a:hover{
+        color: map-get($palette, "textoSecundario");
     }
 }
 .logo{
     width: 150px;
 }
+.img{
+    width: 25%;
+}
 main{
-    background-color: $fondoSecundario;
+    background-color: map-get($palette, "fondoSecundario");
     padding: 1rem;
     border-radius: 10px;
-    h1, p{
+    h2, h2, h3, p{
         align-self: center;
         text-align: center;
     }
-    article{
-        padding: 1rem;
-        background-color: $fondoDestacado;
-        border-radius: 3px;
-    }
 }
+@mixin textColor ($textColor:black) {
+    color: $textColor;
+    background-color: map-get($palette, "fondoDestacado");
+    padding: 1rem;
+    border-radius: 3px;
+}
+.articleCss{
+    @include textColor;
+}
+.articleFeature{
+    @include textColor($textColor: aqua)
+}
+.articleMature{
+    @include textColor($textColor: red)
+}
+.articleIndustry{
+    @include textColor($textColor: green)
+}
+.articleLarge{
+    @include textColor($textColor: blue)
+}
+.articleFrameworks{
+    @include textColor($textColor: yellow)
+}
+
+

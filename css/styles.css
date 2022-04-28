@@ -5,30 +5,76 @@
 body {
   background-color: #50002C; }
 
-header, footer {
-  background-color: #50002C;
+.centrado, header, footer, .navStyle {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 1rem; }
-  header p, footer p {
+
+header, footer {
+  background-color: #50002C; }
+  header h1, header h2, footer h1, footer h2 {
     align-self: center;
     transition: color 2s ease 30ms; }
 
+.navStyle {
+  background-color: #DDD7C6;
+  margin-bottom: 1rem;
+  font-size: 3rem; }
+  .navStyle a {
+    color: black; }
+  .navStyle a:hover {
+    color: #cf649a; }
+
 .logo {
   width: 150px; }
+
+.img {
+  width: 25%; }
 
 main {
   background-color: #DDD7C6;
   padding: 1rem;
   border-radius: 10px; }
-  main h1, main p {
+  main h2, main h2, main h3, main p {
     align-self: center;
     text-align: center; }
-  main article {
-    padding: 1rem;
-    background-color: rgba(160, 160, 160, 0.5);
-    border-radius: 3px; }
+
+.articleCss {
+  color: black;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 1rem;
+  border-radius: 3px; }
+
+.articleFeature {
+  color: aqua;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 1rem;
+  border-radius: 3px; }
+
+.articleMature {
+  color: red;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 1rem;
+  border-radius: 3px; }
+
+.articleIndustry {
+  color: green;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 1rem;
+  border-radius: 3px; }
+
+.articleLarge {
+  color: blue;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 1rem;
+  border-radius: 3px; }
+
+.articleFrameworks {
+  color: yellow;
+  background-color: rgba(160, 160, 160, 0.5);
+  padding: 1rem;
+  border-radius: 3px; }
 
 * {
   font-family: 'Updock', cursive; }
@@ -37,9 +83,9 @@ body header p, body footer p {
   font-weight: bold;
   font-size: 2rem; }
 
-header p, footer p {
+header h1, header h2, footer h1, footer h2 {
   color: white; }
-  header p:hover, footer p:hover {
+  header h1:hover, header h2:hover, footer h1:hover, footer h2:hover {
     color: #cf649a; }
 
 main section p {

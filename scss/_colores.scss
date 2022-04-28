@@ -1,6 +1,15 @@
-$textoPrimario: white;
-$textoSecundario: #cf649a;
-$textoPrincipal: black;
-$fondoPrimario: #50002C;
-$fondoSecundario: #DDD7C6;
-$fondoDestacado: rgba(160, 160, 160, 0.5);
+// $textoPrimario: white;
+// $textoSecundario: #cf649a;
+// $textoPrincipal: black;
+// $fondoPrimario: #50002C;
+// $fondoSecundario: #DDD7C6;
+// $fondoDestacado: rgba(160, 160, 160, 0.5);
+
+$palette: (
+    "textoPrimario": white,
+    "textoSecundario": #cf649a,
+    "textoPrincipal": black,
+    "fondoPrimario": #50002C,
+    "fondoSecundario": #DDD7C6,
+    "fondoDestacado": rgba(160, 160, 160, 0.5),
+);
